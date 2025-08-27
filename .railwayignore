@@ -1,0 +1,25 @@
+# Ignore development files
+.env
+.env.local
+.env.testing
+.env.production
+
+# Ignore test files
+tests/
+phpunit.xml
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+storage/logs/*.log
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
