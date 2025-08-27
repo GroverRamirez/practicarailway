@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "php -S 0.0.0.0:$PORT -t public public/index.php"
+healthcheckPath = "/test.php"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 5
+
+[deploy.env]
+PHP_CLI_SERVER_WORKERS = "1"
