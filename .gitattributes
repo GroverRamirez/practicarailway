@@ -1,4 +1,12 @@
-* text=auto eol=lf
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Scripts should always use LF line endings
+*.sh text eol=lf
+
+# Ensure build scripts are executable
+build-app.sh text eol=lf
+start-app.sh text eol=lf
 
 *.blade.php diff=html
 *.css diff=css
